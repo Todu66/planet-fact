@@ -1,0 +1,42 @@
+*, a {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: #070724;
+}
+
+header {
+    padding: 10px 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+ul {
+    display: flex;
+    gap: 10px;
+}
+
+h1 {
+    color: #fff;
+}
+
+a {
+    color: #fff;
+}
+
+hr {
+    
+    background: #FFFFFF;
+mix-blend-mode: normal;
+opacity: 0.2;
+}
