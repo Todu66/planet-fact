@@ -1,13 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
 .container {
   width: 90%;
   margin: 0 auto;
   display: flex;
-  max-height: 600px;
-  height: 400px;
+
+
   gap: 50px;
   align-items: center;
- margin-top: 30px;
- 
+  margin-top: 30px;
+
 }
 
 .container-left {
@@ -17,12 +18,26 @@
   justify-content: center;
 }
 
+.container-left img {
+  max-width: 400px;
+  width: 380px;
+}
+
 .container-right {
   width: 30%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 18px;
+}
+
+.info-container h1 {
+  font-family: "Antonio";
+  font-weight: 400;
+}
+.info-container p {
+  font-family: "Spartan";
+  font-weight: 400;
 }
 
 p {
@@ -43,12 +58,12 @@ p {
   border: 1px solid #ffffff;
   padding: 15px;
   cursor: pointer;
-  transition: all .4s ease-out;;
+  transition: all 0.4s ease-out;
 }
 
 .container-buttons button:hover {
-    background: #419EBB;
-    opacity: 0.8;
+  background: #419ebb;
+  opacity: 0.8;
 }
 
 .container-buttons button h2 {
@@ -57,17 +72,34 @@ p {
 /*  */
 
 .about {
-    padding: 15px;
-    border: 1px solid #FFFFFF;
+  padding: 15px;
+  border: 1px solid #ffffff;
 }
 
 .description {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-    
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
 }
 
-.description h6, h3 {
-   color: #fff; 
+.description h6,
+h3 {
+  color: #fff;
+}
+
+/* responsive */
+
+@media (max-width: 965px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .container-right {
+    flex-direction: row;
+    width: 85%;
+  }
+
+  .container-buttons {
+    width: 90%;
+  }
 }

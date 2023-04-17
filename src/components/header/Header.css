@@ -1,42 +1,128 @@
-*, a {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap");
+*,
+a {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
-    background: #070724;
+  background: #070724;
 }
 
 header {
-    padding: 10px 15px;
+  padding: 10px 15px;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 ul {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 h1 {
-    color: #fff;
+  color: #fff;
 }
 
 a {
-    color: #fff;
+  color: #fff;
+}
+
+nav a h1 {
+  font-family: "Antonio";
+  font-weight: 400;
+}
+
+li a {
+  font-family: "Spartan";
+  font-weight: 700;
 }
 
 hr {
-    
-    background: #FFFFFF;
-mix-blend-mode: normal;
-opacity: 0.2;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.2;
 }
+/*  */
+
+
+.hamburger-react {
+  display: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.NavLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.NavLinks a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+@media (max-width: 965px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 845px) {
+  .NavLinks {
+    gap: 0;
+  }
+  .NavLinks a {
+    margin: 0 8px;
+  }
+}
+
+
+@media (max-width: 700px) {
+  nav {
+    flex-direction: row;
+  }
+  .hamburger-react  {
+    display: block;
+  
+  }
+
+  .NavLinks {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #070724;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    gap: 20px;
+  }
+
+  .NavLinks a {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .NavLinks.show {
+    display: flex;
+   
+  }
+}
+

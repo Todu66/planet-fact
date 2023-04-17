@@ -2,6 +2,7 @@ import React from "react";
 import venus1 from "../images/venus-1.png";
 import venus2 from "../images/venus-2.png";
 import venus3 from "../images/venus-3.png";
+import venusOval from "../images/venusOval.png"
 import Planet from "../components/Planet";
 
 function Venus() {
@@ -13,6 +14,7 @@ function Venus() {
         image1={venus1}
         image2={venus2}
         image3={venus3}
+        image4={venusOval}
         time="243 DAYS"
         revolution="224.7 DAYS"
         radius="6,051.8 KM"

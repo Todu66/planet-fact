@@ -2,6 +2,7 @@ import React from "react";
 import mercury1 from "../images/mercury-1.png";
 import mercury2 from "../images/mercury-2.png";
 import mercury3 from "../images/mercury-3.png";
+import mercuryOval from "../images/mercuryOval.png"
 import Planet from "../components/Planet";
 function Mercury() {
   return (
@@ -12,6 +13,7 @@ function Mercury() {
         image1={mercury1}
         image2={mercury2}
         image3={mercury3}
+        image4={mercuryOval}
         time="58.6 DAYS"
         revolution="87.97 DAYS"
         radius="2,439.7 KM"
