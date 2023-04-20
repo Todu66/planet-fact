@@ -15,6 +15,19 @@ const Planet = (props) => {
   }
   return (
     <>
+      <div className="mobile-buttons-container">
+        <div className="mobile-div">
+          <h2 onClick={overView}>overview</h2>
+        </div>
+        {/*  */}
+        <div className="mobile-div">
+          <h2 onClick={structure}>structure</h2>
+        </div>
+        {/*  */}
+        <div className="mobile-div">
+          <h2 onClick={surface}>surface</h2>
+        </div>
+      </div>
       <div className="container">
         <div className="container-left">
           <img src={dataButton} />
