@@ -71,7 +71,6 @@ hr {
   text-decoration: none;
   margin: 0 1rem;
 }
-
 @media (max-width: 965px) {
   nav {
     flex-direction: column;
