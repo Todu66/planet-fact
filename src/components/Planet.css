@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 .container {
   width: 90%;
   margin: 0 auto;
   display: flex;
-
+  max-width: 1440px;
 
   gap: 50px;
   align-items: center;
@@ -89,6 +94,10 @@ h3 {
 
 /* responsive */
 
+.mobile-buttons-container {
+  display: none;
+}
+
 @media (max-width: 965px) {
   .container {
     flex-direction: column;
@@ -102,4 +111,61 @@ h3 {
   .container-buttons {
     width: 90%;
   }
+}
+
+@media (max-width: 730px) {
+  .container-left img {
+    width: 300px;
+  }
+
+  .container-right {
+    width: 75%;
+  }
+}
+
+@media (max-width: 660px) {
+  .description {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 26px;
+  }
+
+  .container-left img {
+    width: 250px;
+  }
+} 
+
+@media (max-width: 500px) {
+  .description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  
+}
+
+
+
+@media (max-width: 500px) {
+
+  .container-buttons {
+    display: none;
+  }
+
+  .mobile-buttons-container {
+    color: #fff;
+    background: none;
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+}
+
+@media (max-width: 400px) {
+
 }
