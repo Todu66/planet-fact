@@ -1,19 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
+
+
 .container {
   width: 90%;
   margin: 0 auto;
   display: flex;
   max-width: 1440px;
-
+  
   gap: 50px;
   align-items: center;
   margin-top: 30px;
-
 }
 
 .container-left {
@@ -57,6 +59,8 @@ p {
   gap: 8px;
 }
 
+
+
 .container-buttons button {
   mix-blend-mode: normal;
   background: #070724;
@@ -84,7 +88,7 @@ p {
 .description {
   display: flex;
   justify-content: space-around;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 .description h6,
@@ -111,6 +115,10 @@ h3 {
   .container-buttons {
     width: 90%;
   }
+
+  .description {
+    margin-top: 48px;
+  }
 }
 
 @media (max-width: 730px) {
@@ -120,6 +128,10 @@ h3 {
 
   .container-right {
     width: 75%;
+  }
+
+  .description {
+    margin-top: 40px;
   }
 }
 
@@ -136,7 +148,10 @@ h3 {
   .container-left img {
     width: 250px;
   }
-} 
+  .container-left {
+    width: 350px;
+  }
+}
 
 @media (max-width: 500px) {
   .description {
@@ -144,13 +159,6 @@ h3 {
     flex-direction: column;
     gap: 10px;
   }
-
-  
-}
-
-
-
-@media (max-width: 500px) {
 
   .container-buttons {
     display: none;
@@ -161,11 +169,26 @@ h3 {
     background: none;
     display: flex;
     justify-content: space-around;
+  }
+}
 
+@media (max-width: 450px) {
+  .container-left {
+    width: 250px;
   }
 
+  .NavLinks {
+    width: 100%;
+    gap: 35px;
+  }
 }
 
 @media (max-width: 400px) {
+  .NavLinks a {
+    font-size: 20px;
+  }
 
+  .NavLinks {
+    gap: 28px;
+  }
 }
