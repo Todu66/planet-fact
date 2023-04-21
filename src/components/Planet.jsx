@@ -14,7 +14,7 @@ const Planet = (props) => {
     setDataButton((dataButton = props.image3));
   }
   return (
-    <>
+    <div className="main-container">
       <div className="mobile-buttons-container">
         <div className="mobile-div">
           <h2 onClick={overView}>overview</h2>
@@ -70,7 +70,7 @@ const Planet = (props) => {
           <h3>{props.temp}</h3>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
