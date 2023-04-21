@@ -8,6 +8,7 @@ import Jupiter from './pages/Jupiter';
 import Saturn from './pages/Saturn';
 import Uranus from './pages/Uranus';
 import Neptune from './pages/Neptune';
+import "../src/components/Planet.css"
 export default function App() {
   return (
     <Router>
